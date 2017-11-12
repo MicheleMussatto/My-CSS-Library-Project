@@ -1,0 +1,102 @@
+body, html {
+  height: 100%;
+    margin: 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: #5D5046;
+}
+.ad {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 36px;
+}
+.asc {
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+}
+.bw {
+  font-family: 'Barlow', sans-serif;
+  font-size: 36px;
+}
+.ws {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 36px;
+}
+.imageDiv1 {
+    background-image: url("woman_on_pier.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*.image1 {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: .65;
+}*/
+header {
+  /*background-color: (95, 131, 250, 0.4);*/
+  /*background-color: black;
+  opacity: 0.8;*/
+}
+.navbar {
+width: 100%;
+margin: 0 auto;
+  position: fixed;
+  background-color: #5D5046;
+  opacity: 0.2;
+
+}
+.navbarClear {
+width: 100%;
+margin: 0 auto;
+  position: fixed;
+
+
+}
+.logo {
+float: left;
+padding: 10px 25px;
+height: 35px;
+}
+nav {
+  float: right;
+}
+nav ul {
+  /*margin: 0;*/
+    /*padding: 0;*/
+    list-style: none;
+    padding-right: 20px;
+}
+nav li {
+  display:inline-block;
+  margin-left: 70px;
+  padding-top: 5px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+nav a:hover {
+  color: black;
+  opacity: .5;
+}
+.text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 120px;
+  color: white;
+  /*background-color: black;
+  opacity: .35;*/
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 50%;
+    width: 100%
+
+
+
+
+
+}

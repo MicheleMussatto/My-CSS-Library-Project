@@ -1,0 +1,39 @@
+Project: Build your own lightweight CSS library.
+
+Tip: Don't be afraid to check out existing libraries for inspiration
+
+Requirements:
+  Must include either reset.css or normalize.css
+  Typography -- include/import font(s) and use this in your font stack. 
+  Base styles (font-size, color, line-height, margin, padding, anything else spacing/layout related) covering at least:
+    div (and header/footer/main/nav/section)
+    h1-h6
+    p
+    ul/ol
+    blockquote
+    img
+    a (default and hover colors)
+  Form Styles (input, radios, checkboxes, select, textarea)
+  Table Styles
+  Header bar (sticky or not, I don't care) with room for a logo and a nav menu with five items on the top level and dropdown menus for nav items nested below the top level nav items
+  Grid system (simple is okay)
+  Buttons (>=3 [color? sizes?])
+  At least one other element/component of your own choosing
+
+Notes:
+  Besides your base styles, all styled element/components should be controlled by class name. <button class="btn_blue">Click Me</button>
+
+  You should create and submit an example/tutorial HTML page that shows off each of the elements/components you have created.
+  Bonus: include code snippets to show exactly how they work
+
+  Don't forget to give your library a catchy name!
+  Bonus: Create a logo for it.
+
+Submission requirements:
+  Push to new Github repo
+
+Deadline:
+  Sunday 11/12/17 at 11:59PM
+
+
+
