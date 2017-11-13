@@ -1,83 +1,51 @@
 body, html {
   height: 100%;
-    margin: 0;
+  margin: 0;
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
   color: #5D5046;
-}
-.ad {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 36px;
-}
-.asc {
-  font-family: 'Amatic SC', cursive;
-  font-size: 36px;
-}
-.bw {
-  font-family: 'Barlow', sans-serif;
-  font-size: 36px;
-}
-.ws {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 36px;
-}
-.imageDiv1 {
-    background-image: url("woman_on_pier.jpg");
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/*.image1 {
-  max-width: 100%;
-  max-height: 100%;
-  opacity: .65;
-}*/
-header {
-  /*background-color: (95, 131, 250, 0.4);*/
-  /*background-color: black;
-  opacity: 0.8;*/
-}
+  }
 .navbar {
-width: 100%;
-margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
   position: fixed;
   background-color: #5D5046;
   opacity: 0.2;
 }
 .navbarClear {
-width: 100%;
-margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
   position: fixed;
 
 }
 .logo {
-float: left;
-padding: 10px 25px;
-height: 35px;
+  float: left;
+  padding: 5px 0px 0px 25px;
+  line-height: 0.9;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+
 }
 nav {
   float: right;
 }
 nav ul {
-  /*margin: 0;*/
-    /*padding: 0;*/
-    list-style: none;
-    padding-right: 20px;
+  list-style: none;
+  padding-right: 20px;
 }
 nav li {
   display:inline-block;
   margin-left: 70px;
-  padding-top: 5px;
+  padding-top: 1px;
 }
 nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-
 }
-nav a:hover {
+a:hover {
   color: black;
   opacity: .5;
 }
@@ -85,16 +53,110 @@ nav a:hover {
   font-family: 'Amatic SC', cursive;
   font-size: 120px;
   color: white;
-  /*background-color: black;
-  opacity: .35;*/
-    left: 0;
-    position:absolute;
-    text-align:center;
-    top: 50%;
-    width: 100%
+  text-shadow: 0px 0px 20px black;
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 47%;
+  width: 100%
+}
+.imageDiv1 {
+    background-image: url("woman_on_pier.jpg");
+    height: 725px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageDiv2 {
+    position: relative;
+    background-image: url("bicycle.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imageDiv3 {
+    position: relative;
+    background-image: url("web_design.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textDiv1 {
 
+}
+/*button {
+  height: 37px;
+  width: 200px;
+  background-image:url('susan_wojcicki.png');
+  background-repeat:no-repeat;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+}*/
+.textDiv2 {
 
+}
+.avatar {
+  border-radius: 50%;
+  height: 140px;
+  box-shadow: -1px 1px 10px #5D5046;
 
+}
+.avatar:hover {
+  border-radius: 50%;
+  height: 140px;
+  box-shadow: -2px 2px 20px #5D5046;
+}
+.avatars {
+  -webkit-flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  color: white;
+}
+.avatars:hover {
+  -webkit-flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-bottom: 30px;
+  color: #5D5046;
+}
+.avatarbox {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: center;
+  color: white;
+}
+.avatarbox:hover {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: center;
+  color: #5D5046;
+}
+.flexboxside {
+  flex: 3;
+  -webkit-flex: 1;
+}
+.textDiv3 {
 
+}
+.sectionHead {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  text-align: center;
+  line-height: 0.8;
 
+}
+.sectionText {
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px 100px;
+  padding-bottom: 40px;
 }
