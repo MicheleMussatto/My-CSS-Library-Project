@@ -686,6 +686,62 @@ button {
 .btnBrown {
   background: #c9a775;
 }
+
+.formDiv {
+  background: #c9a775;
+  padding: 40px;
+  margin: 0% 30% 40px 30%;
+}
+.formHead {
+  color: white;
+  padding-bottom: 20px;
+}
+.field {
+  padding-bottom: 10px;
+
+}
+.label {
+  color: white;
+}
+.input {
+  width: 80%;
+  border: 0;
+  height: 28px;
+  padding-left: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: #5D5046;
+}
+select {
+  height: 28px;
+  width: 40%;
+  padding-left: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  color: white;
+  border: 0;
+  background: #98b9d6;
+}
+option {
+  background: white;
+  color: #5D5046;
+}
+.textarea {
+  width: 100%;
+  border: 0;
+  height: 60px;
+  padding: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+}
+.radio {
+  color: white;
+}
+.formBtn {
+  text-align: left;
+  padding-top: 20px;
+}
+
 .grid6 {
   border: white solid 10px;
   float: left;
