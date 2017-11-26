@@ -686,7 +686,6 @@ button {
 .btnBrown {
   background: #c9a775;
 }
-
 .formDiv {
   background: #c9a775;
   padding: 40px;
@@ -698,7 +697,6 @@ button {
 }
 .field {
   padding-bottom: 10px;
-
 }
 .label {
   color: white;
@@ -741,7 +739,6 @@ option {
   text-align: left;
   padding-top: 20px;
 }
-
 .grid6 {
   border: white solid 10px;
   float: left;
