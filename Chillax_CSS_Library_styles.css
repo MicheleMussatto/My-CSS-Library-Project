@@ -500,8 +500,8 @@ blockquote {
   font-size: 22px;
   line-height: 1.2;
   text-align: justify;
-  margin: 0px 250px;
-  padding-bottom: 40px;
+  margin: 0% 15%;
+  padding-bottom: 80px;
 }
 .quoteAuthor {
   font-family: 'Amatic SC', cursive;
@@ -686,3 +686,44 @@ button {
 .btnBrown {
   background: #c9a775;
 }
+.grid6 {
+  border: white solid 10px;
+  float: left;
+  background: #9E9E9E;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+@media (min-width:320px) {
+.grid6 {width: 100%;}
+}
+@media (min-width:414px) {
+.grid6 {width: 50%;}
+}
+@media (min-width:480px) {
+.grid6 {width: 33%;}
+}
+@media (min-width:768px) {
+.grid6 {width: 25%;}
+}
+@media (min-width:1024px) {
+.grid6 {width: 16.66%;}
+}
+.flexDiv9 {
+  border: white solid 10px;
+  -webkit-flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 200px;
+  padding-bottom: 40px;
+}
+.flex1 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex2 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex3 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex4 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex5 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex6 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex7 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex8 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex9 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
