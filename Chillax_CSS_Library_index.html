@@ -13,9 +13,9 @@
       <h3><a href="#" class="logo">Chillax</a></h3>
       <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">Elements</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#">Code</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -27,10 +27,22 @@
     <h3><a href="#" class="logo">Chillax</a></h3>
     <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#targetBase">Elements</a>
+
+        <!-- <div id="myDropdown" class="dropdown-content">
+            <a href="#targetAbout">Parallax</a>
+            <a href="#targetAvatars">Avatars</a>
+            <a href="#targetBase">Base Styles</a>
+            <a href="#targetButtons">Buttons</a>
+            <a href="#targetForm">Form</a>
+            <a href="#targetGrids">Grids</a>
+            <a href="#targetTable">Table</a>
+        </div> -->
+
+      </li>
+      <li><a href="#targetAbout">About</a></li>
+      <li><a href="https://codepen.io/dashboard/" target="_blank">Code</a></li>
+      <li><a href="https://www.michelemussatto.com/contact" target="_blank">Contact</a></li>
     </ul>
   </nav>
   </div>
@@ -40,11 +52,12 @@
       <div class="imageDivTitle">
          <h1>Hello</h1>
       </div>
+        <a name="targetAbout"></a>
   </div>
 
   <div class="textDiv" id="textDiv1">
     <h2 class="sectionHead">Welcome to Chillax.</h2>
-    <p class="sectionText">Chillax is a cool, clean CSS library with built in parallaxing sections.   &nbsp;Simply swap in your own images and text and add and delete sections as needed.  &nbsp;Then insert our navbars, buttons, avatars and forms into our responsive 6-, 9- and 12-grid flexboxes and...  &nbsp;you're ready to go.</p>
+    <p class="sectionText">Chillax is a cool, clean CSS library with built in parallaxing sections.   &nbsp;Simply swap in your own images and text and add and delete sections as needed.  &nbsp;Then insert our navbars, buttons, avatars and forms into our responsive 6 grid or flexbox 9 grid and...  &nbsp;you're ready to go.</p>
     <p class="sectionText">Like what you see so far?  &nbsp;Cool...  keep scrolling, there's more chill stuff to come.  &nbsp;When you're ready to get started come back to this section and click on the buttons below to set up your parallaxing sections.  &nbsp;Or don't...  &nbsp;just pick the elements you want, it's all good.</p>
     <div class="button">
       <button class="btnGray"><a href="https://codepen.io/mmussatto/pen/zPEdaK" target="_blank">GET PARALLAXING SECTIONS</a></button>
@@ -85,6 +98,7 @@
   </div>
 
   <div class="textDiv" id="textDiv3">
+    <a name="targetBase"></a>
     <h2 class="sectionHead">The Chillax Base Styles.</h2>
     <p class="sectionText">Below you will find the base styles that come with the Parallaxing Sections download. &nbsp;Use them as is or stir things up... &nbsp;have fun.</p>
     <h1>H1 Example</h1>
@@ -343,7 +357,28 @@
     <p class="sectionText">Chillax is a cool, simple, clean CSS library with built in parallax sections.  Simply swap in your own images and text and add and delete sections as needed. Insert buttons, avatars and forms into our responsive 6 grid flexboxes and you're ready to go.</p>
   </div>
 
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
 
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
 
   </body>
 </html>
