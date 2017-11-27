@@ -780,3 +780,37 @@ option {
 .flex7 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
 .flex8 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
 .flex9 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+
+.tableDiv {
+  background: #c9a775;
+  padding: 15px 0px 30px 0px;
+  margin: 0% 30% 40px 30%;
+}
+table {
+  border: 0px;
+  background: white;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+thead {
+  background: #c9a775;
+  opacity: 0.8;
+}
+th {
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #ddd;
+}
+.ttitle {
+  color: white;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
