@@ -519,7 +519,7 @@ blockquote {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  background-color: #5D5046;
+  background: #5D5046;
   opacity: 0.2;
   z-index: 1;
 }
@@ -844,3 +844,25 @@ tr:hover {
   padding-bottom: 10px;
   padding-left: 15px;
 }
+#navbarpic {
+  display: block;
+  margin: auto;
+  padding-bottom: 40px;
+}
+/*.navbarDemo {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #5D5046;
+  opacity: .5;
+  z-index: 2;
+display: block;
+}
+.navbarClearDemo {
+  width: 100%;
+  margin: 0 100%;
+  position: absolute;
+  background-color: red;
+  z-index: 3;
+display: block;
+}*/
