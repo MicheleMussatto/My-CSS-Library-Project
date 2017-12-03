@@ -641,6 +641,7 @@ a:hover {
 }
 .textDiv {
   margin: 40px;
+
 }
 .avatar {
   border-radius: 50%;
@@ -849,20 +850,41 @@ tr:hover {
   margin: auto;
   padding-bottom: 40px;
 }
-/*.navbarDemo {
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  background-color: #5D5046;
-  opacity: .5;
-  z-index: 2;
-display: block;
+.footerDiv {
+  padding: 2.5em 0;
+  /*-webkit-flex: 1;
+  display: flex;
+  flex-direction: row;
+  maxwidth: 100%;*/
+  margin-top: 40px;
+  max-width: 100%;
 }
-.navbarClearDemo {
-  width: 100%;
-  margin: 0 100%;
-  position: absolute;
-  background-color: red;
-  z-index: 3;
-display: block;
-}*/
+#footerDiv {
+  background: #9E9E9E;
+  color: white;
+}
+.codeholder {
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+  vertical-align: middle;
+}
+.codepen {
+  width: 35%;
+}
+.copyright {
+  display: inline-block;
+  /*width: 20%;*/
+  text-align: center;
+  margin: 0 1em;
+  vertical-align: middle;
+}
+.githolder {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  vertical-align: middle;
+}
+.github {
+  width: 35%;
+}
