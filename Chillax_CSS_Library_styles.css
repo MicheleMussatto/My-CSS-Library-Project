@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Barlow');
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');*/
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Barlow');
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -486,12 +484,12 @@ h4 {
   font-size: 28px;
 }
 h5 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 22px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
 }
 h6 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 17px;
 }
 p, li {
   line-height: 1.5;
@@ -692,7 +690,7 @@ a:hover {
   font-size: 18px;
   line-height: 1.2;
   text-align: justify;
-  margin: 0px 100px;
+  margin: 0% 10%;
   padding-bottom: 40px;
 }
 .button {
@@ -720,7 +718,7 @@ button {
 .formDiv {
   background: #c9a775;
   padding: 40px;
-  margin: 0% 30% 40px 30%;
+  margin: 0% 10% 40px 10%;
 }
 .formHead {
   color: white;
@@ -779,25 +777,77 @@ option {
 }
 @media (min-width:320px) {
 .grid6 {width: 100%;}
+.sectionHead {font-size: 90px;}
+.sectionText {font-size: 32px;}
+body, button {font-size: 27px;}
+.ttitle {font-size: 40px;}
+.logo, .libName {font-size: 47px;}
+/*.codeholder, .copyright, .githolder {display: block}*/
+.codeholder, .copyright, .githolder {width: 100%}
+.avatars, .avatars:hover {flex-direction: column;}
+.flexDiv9 {flex-direction: column;}
+.codepen, .github {width: 75%;}
 }
 @media (min-width:414px) {
 .grid6 {width: 50%;}
+.sectionHead {font-size: 80px;}
+.sectionText {font-size: 27px;}
+body, button {font-size: 24px;}
+.ttitle {font-size: 37px;}
+.logo, .libName {font-size: 44px;}
+/*.codeholder, .copyright, .githolder {display: block}*/
+.codeholder, .copyright, .githolder {width: 100%}
+.avatars, .avatars:hover {flex-direction: column;}
+.flexDiv9 {flex-direction: column;}
+.codepen, .github {width: 50%;}
 }
 @media (min-width:480px) {
 .grid6 {width: 33%;}
+.sectionHead {font-size: 70px;}
+.sectionText {font-size: 24px;}
+body, button {font-size: 21px;}
+.ttitle {font-size: 34px;}
+.logo, .libName {font-size: 41px;}
+/*.codeholder, .copyright, .githolder {display: block}*/
+.codeholder, .copyright, .githolder {width: 100%}
+.avatars, .avatars:hover {flex-direction: column;}
+.flexDiv9 {flex-direction: column;}
+.codepen, .github {width: 50%;}
 }
 @media (min-width:768px) {
 .grid6 {width: 25%;}
+.sectionHead {font-size: 60px;}
+.sectionText {font-size: 21px;}
+body, button {font-size: 17px;}
+.ttitle {font-size: 31px;}
+.logo, .libName {font-size: 38px;}
+/*.codeholder, .copyright, .githolder {display: inline-block}*/
+.codeholder, .githolder {width: 40%}
+.copyright {width: 20%}
+.avatars, .avatars:hover {flex-direction: row;}
+.flexDiv9 {flex-direction: row;}
+.codepen, .github {width: 35%;}
 }
 @media (min-width:1024px) {
 .grid6 {width: 16.66%;}
+.sectionHead {font-size: 45px;}
+.sectionText {font-size: 18px;}
+body, button {font-size: 14px;}
+.ttitle {font-size: 28px;}
+.logo, .libName {font-size: 35px;}
+/*.codeholder, .copyright, .githolder {display: inline-block}*/
+.codeholder, .githolder {width: 40%}
+.copyright {width: 20%}
+.avatars, .avatars:hover {flex-direction: row;}
+.flexDiv9 {flex-direction: row;}
+.codepen, .github {width: 35%;}
 }
 .flexDiv9 {
   border: white solid 10px;
   -webkit-flex: 1;
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   min-height: 200px;
   padding-bottom: 40px;
@@ -815,7 +865,7 @@ option {
 .tableDiv {
   background: #c9a775;
   padding: 15px 0px 30px 0px;
-  margin: 0% 30% 40px 30%;
+  margin: 0% 10% 40px 10%;
 }
 table {
   border: 0px;
@@ -852,10 +902,6 @@ tr:hover {
 }
 .footerDiv {
   padding: 2.5em 0;
-  /*-webkit-flex: 1;
-  display: flex;
-  flex-direction: row;
-  maxwidth: 100%;*/
   margin-top: 40px;
   max-width: 100%;
 }
@@ -874,9 +920,10 @@ tr:hover {
 }
 .copyright {
   display: inline-block;
-  /*width: 20%;*/
+  width: 20%;
+  box-sizing:border-box;
   text-align: center;
-  margin: 0 1em;
+  padding: 0 1em;
   vertical-align: middle;
 }
 .githolder {
