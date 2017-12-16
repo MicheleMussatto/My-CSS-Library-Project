@@ -690,7 +690,7 @@ a:hover {
   font-size: 18px;
   line-height: 1.2;
   text-align: justify;
-  margin: 0% 10%;
+  margin: 0% 5%;
   padding-bottom: 40px;
 }
 .button {
@@ -718,7 +718,7 @@ button {
 .formDiv {
   background: #c9a775;
   padding: 40px;
-  margin: 0% 10% 40px 10%;
+  margin: 0% 6% 40px 6%;
 }
 .formHead {
   color: white;
@@ -768,6 +768,9 @@ option {
   text-align: left;
   padding-top: 20px;
 }
+#frmBtn {
+  min-width: 120px;
+}
 .grid6 {
   border: white solid 10px;
   float: left;
@@ -775,75 +778,7 @@ option {
   box-sizing: border-box;
   min-height: 200px;
 }
-@media (min-width:320px) {
-.grid6 {width: 100%;}
-.sectionHead {font-size: 90px;}
-.sectionText {font-size: 32px;}
-body, button {font-size: 27px;}
-.ttitle {font-size: 40px;}
-.logo, .libName {font-size: 47px;}
-/*.codeholder, .copyright, .githolder {display: block}*/
-.codeholder, .copyright, .githolder {width: 100%}
-.avatars, .avatars:hover {flex-direction: column;}
-.flexDiv9 {flex-direction: column;}
-.codepen, .github {width: 75%;}
-}
-@media (min-width:414px) {
-.grid6 {width: 50%;}
-.sectionHead {font-size: 80px;}
-.sectionText {font-size: 27px;}
-body, button {font-size: 24px;}
-.ttitle {font-size: 37px;}
-.logo, .libName {font-size: 44px;}
-/*.codeholder, .copyright, .githolder {display: block}*/
-.codeholder, .copyright, .githolder {width: 100%}
-.avatars, .avatars:hover {flex-direction: column;}
-.flexDiv9 {flex-direction: column;}
-.codepen, .github {width: 50%;}
-}
-@media (min-width:480px) {
-.grid6 {width: 33%;}
-.sectionHead {font-size: 70px;}
-.sectionText {font-size: 24px;}
-body, button {font-size: 21px;}
-.ttitle {font-size: 34px;}
-.logo, .libName {font-size: 41px;}
-/*.codeholder, .copyright, .githolder {display: block}*/
-.codeholder, .copyright, .githolder {width: 100%}
-.avatars, .avatars:hover {flex-direction: column;}
-.flexDiv9 {flex-direction: column;}
-.codepen, .github {width: 50%;}
-}
-@media (min-width:768px) {
-.grid6 {width: 25%;}
-.sectionHead {font-size: 60px;}
-.sectionText {font-size: 21px;}
-body, button {font-size: 17px;}
-.ttitle {font-size: 31px;}
-.logo, .libName {font-size: 38px;}
-/*.codeholder, .copyright, .githolder {display: inline-block}*/
-.codeholder, .githolder {width: 40%}
-.copyright {width: 20%}
-.avatars, .avatars:hover {flex-direction: row;}
-.flexDiv9 {flex-direction: row;}
-.codepen, .github {width: 35%;}
-}
-@media (min-width:1024px) {
-.grid6 {width: 16.66%;}
-.sectionHead {font-size: 45px;}
-.sectionText {font-size: 18px;}
-body, button {font-size: 14px;}
-.ttitle {font-size: 28px;}
-.logo, .libName {font-size: 35px;}
-/*.codeholder, .copyright, .githolder {display: inline-block}*/
-.codeholder, .githolder {width: 40%}
-.copyright {width: 20%}
-.avatars, .avatars:hover {flex-direction: row;}
-.flexDiv9 {flex-direction: row;}
-.codepen, .github {width: 35%;}
-}
 .flexDiv9 {
-  border: white solid 10px;
   -webkit-flex: 1;
   display: flex;
   flex-direction: row;
@@ -852,20 +787,12 @@ body, button {font-size: 14px;}
   min-height: 200px;
   padding-bottom: 40px;
 }
-.flex1 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex2 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex3 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex4 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex5 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex6 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex7 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex8 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
-.flex9 {-webkit-flex: 1; flex: 1; margin: 10px; background: #c9a775;}
+.flex9 {-webkit-flex: 1; flex: 1; margin: 1%; background: #c9a775;}
 
 .tableDiv {
   background: #c9a775;
   padding: 15px 0px 30px 0px;
-  margin: 0% 10% 40px 10%;
+  margin: 0% 7% 40px 7%;
 }
 table {
   border: 0px;
@@ -876,6 +803,8 @@ table {
 td, th {
   border: 1px solid #ddd;
   padding: 8px;
+  word-break: break-all;
+  font-size: 14px;
 }
 thead {
   background: #c9a775;
@@ -934,4 +863,66 @@ tr:hover {
 }
 .github {
   width: 35%;
+}
+@media (min-width:100px) {
+.grid6 {width: 100%;}
+.sectionHead {font-size: 80px;}
+.sectionText {font-size: 24px;}
+body, button {font-size: 21px;}
+td, th {font-size: 17px;}
+.ttitle {font-size: 37px;}
+.logo, .libName {font-size: 44px;}
+.codeholder, .copyright, .githolder {width: 100%}
+.avatars, .avatars:hover {flex-direction: column;}
+.codepen, .github {width: 50%;}
+}
+@media (min-width:414px) {
+.grid6 {width: 50%;}
+.sectionHead {font-size: 80px;}
+.sectionText {font-size: 27px;}
+body, button {font-size: 24px;}
+td, th {font-size: 17px;}
+.ttitle {font-size: 37px;}
+.logo, .libName {font-size: 44px;}
+.codeholder, .copyright, .githolder {width: 100%}
+.avatars, .avatars:hover {flex-direction: column;}
+.codepen, .github {width: 50%;}
+}
+@media (min-width:480px) {
+.grid6 {width: 33%;}
+.sectionHead {font-size: 70px;}
+.sectionText {font-size: 24px;}
+body, button {font-size: 21px;}
+td, th {font-size: 17px;}
+.ttitle {font-size: 34px;}
+.logo, .libName {font-size: 41px;}
+.codeholder, .copyright, .githolder {width: 100%}
+.avatars, .avatars:hover {flex-direction: column;}
+.codepen, .github {width: 50%;}
+}
+@media (min-width:768px) {
+.grid6 {width: 25%;}
+.sectionHead {font-size: 60px;}
+.sectionText {font-size: 21px;}
+body, button {font-size: 17px;}
+td, th {font-size: 17px;}
+.ttitle {font-size: 31px;}
+.logo, .libName {font-size: 38px;}
+.codeholder, .githolder {width: 40%}
+.copyright {width: 20%}
+.avatars, .avatars:hover {flex-direction: row;}
+.codepen, .github {width: 35%;}
+}
+@media (min-width:1024px) {
+.grid6 {width: 16.66%;}
+.sectionHead {font-size: 45px;}
+.sectionText {font-size: 18px;}
+body, button {font-size: 14px;}
+td, th {font-size: 14px;}
+.ttitle {font-size: 28px;}
+.logo, .libName {font-size: 35px;}
+.codeholder, .githolder {width: 40%}
+.copyright {width: 20%}
+.avatars, .avatars:hover {flex-direction: row;}
+.codepen, .github {width: 35%;}
 }
