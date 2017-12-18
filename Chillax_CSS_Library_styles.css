@@ -324,7 +324,7 @@ fieldset {
 legend {
   box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
-  display: table; /* 1 */
+  display: ; /* 1 */
   max-width: 100%; /* 1 */
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
@@ -543,12 +543,15 @@ nav ul {
   padding-right: 20px;
 }
 nav li {
-  display:inline-block;
+  display: inline-block;
   margin-left: 70px;
   padding-top: 1px;
 }
 .navItem {
-  text-shadow: 0px 0px 20px black;
+  text-shadow: 0px 0px 20px black
+}
+a.navItem {
+  display: block;
 }
 a {
   color: white;
@@ -584,6 +587,15 @@ a:hover {
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.hamburger-icon {
+  height: 20px;
+  /*display: none;*/
+}
+.hamburger-icon:hover {
+  height: 20px;
+  opacity: .2;
+  display: none;
 }
 .imageDivTitle {
   color: white;
@@ -639,7 +651,6 @@ a:hover {
 }
 .textDiv {
   margin: 40px;
-
 }
 .avatar {
   border-radius: 50%;
@@ -826,12 +837,12 @@ tr:hover {
 }
 #navbarpic {
   display: block;
+  width: 50%;
   margin: auto;
   padding-bottom: 40px;
 }
 .footerDiv {
   padding: 2.5em 0;
-  margin-top: 40px;
   max-width: 100%;
 }
 #footerDiv {
@@ -864,7 +875,27 @@ tr:hover {
 .github {
   width: 35%;
 }
+.codeholder2 {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  vertical-align: middle;
+}
+.codepen2 {
+  width: 75%;
+}
+.githolder2 {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  vertical-align: middle;
+}
+.github2 {
+  width: 75%;
+}
 @media (min-width:100px) {
+a.navItem {display: none;}
+.hamburger-icon {display: block;}
 .grid6 {width: 100%;}
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 24px;}
@@ -874,9 +905,16 @@ td, th {font-size: 17px;}
 .logo, .libName {font-size: 44px;}
 .codeholder, .copyright, .githolder {width: 100%}
 .avatars, .avatars:hover {flex-direction: column;}
-.codepen, .github {width: 50%;}
+#navbarpic {width: 100%;}
+.codepen, .github {width: 25%;}
+.codepen2, .github2 {width: 75%;}
+.codeholder, .githolder {visibility: hidden;}
+.codeholder2, .githolder2 {display: visible;}
+.footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:414px) {
+a.navItem {display: none;}
+.hamburger-icon {display: block;}
 .grid6 {width: 50%;}
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 27px;}
@@ -886,9 +924,16 @@ td, th {font-size: 17px;}
 .logo, .libName {font-size: 44px;}
 .codeholder, .copyright, .githolder {width: 100%}
 .avatars, .avatars:hover {flex-direction: column;}
-.codepen, .github {width: 50%;}
+#navbarpic {width: 90%;}
+.codepen, .github {width: 15%;}
+.codepen2, .github2 {width: 75%;}
+.codeholder, .githolder {visibility: hidden;}
+.codeholder2, .githolder2 {display: visible;}
+.footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:480px) {
+a.navItem {display: none;}
+.hamburger-icon {display: block;}
 .grid6 {width: 33%;}
 .sectionHead {font-size: 70px;}
 .sectionText {font-size: 24px;}
@@ -898,9 +943,16 @@ td, th {font-size: 17px;}
 .logo, .libName {font-size: 41px;}
 .codeholder, .copyright, .githolder {width: 100%}
 .avatars, .avatars:hover {flex-direction: column;}
-.codepen, .github {width: 50%;}
+#navbarpic {width: 90%;}
+.codepen, .github {width: 5%;}
+.codepen2, .github2 {width: 50%;}
+.codeholder, .githolder {display: none;}
+.codeholder2, .githolder2 {display: visible;}
+.footerDiv {padding: 0.5em 0;}
 }
-@media (min-width:768px) {
+@media (min-width:786px) {
+a.navItem {display: block;}
+.hamburger-icon {display: none;}
 .grid6 {width: 25%;}
 .sectionHead {font-size: 60px;}
 .sectionText {font-size: 21px;}
@@ -911,9 +963,16 @@ td, th {font-size: 17px;}
 .codeholder, .githolder {width: 40%}
 .copyright {width: 20%}
 .avatars, .avatars:hover {flex-direction: row;}
+#navbarpic {width: 60%;}
 .codepen, .github {width: 35%;}
+.codepen2, .github2 {width: 35%;}
+.codeholder, .githolder {visibility: visible;}
+.codeholder2, .githolder2 {display: none;}
+.footerDiv {padding: 2.5em 0;}
 }
 @media (min-width:1024px) {
+a.navItem {display: block;}
+.hamburger-icon {display: none;}
 .grid6 {width: 16.66%;}
 .sectionHead {font-size: 45px;}
 .sectionText {font-size: 18px;}
@@ -924,5 +983,10 @@ td, th {font-size: 14px;}
 .codeholder, .githolder {width: 40%}
 .copyright {width: 20%}
 .avatars, .avatars:hover {flex-direction: row;}
+#navbarpic {width: 50%;}
 .codepen, .github {width: 35%;}
+.codepen2, .github2 {width: 35%;}
+.codeholder, .githolder {visibility: visible;}
+.codeholder2, .githolder2 {display: none;}
+.footerDiv {padding: 2.5em 0;}
 }
