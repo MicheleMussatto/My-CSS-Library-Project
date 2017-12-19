@@ -894,8 +894,6 @@ tr:hover {
   width: 75%;
 }
 @media (min-width:100px) {
-a.navItem {display: none;}
-.hamburger-icon {display: block;}
 .grid6 {width: 100%;}
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 24px;}
@@ -913,8 +911,6 @@ td, th {font-size: 17px;}
 .footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:414px) {
-a.navItem {display: none;}
-.hamburger-icon {display: block;}
 .grid6 {width: 50%;}
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 27px;}
@@ -932,8 +928,6 @@ td, th {font-size: 17px;}
 .footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:480px) {
-a.navItem {display: none;}
-.hamburger-icon {display: block;}
 .grid6 {width: 33%;}
 .sectionHead {font-size: 70px;}
 .sectionText {font-size: 24px;}
@@ -951,8 +945,6 @@ td, th {font-size: 17px;}
 .footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:786px) {
-a.navItem {display: block;}
-.hamburger-icon {display: none;}
 .grid6 {width: 25%;}
 .sectionHead {font-size: 60px;}
 .sectionText {font-size: 21px;}
@@ -971,8 +963,6 @@ td, th {font-size: 17px;}
 .footerDiv {padding: 2.5em 0;}
 }
 @media (min-width:1024px) {
-a.navItem {display: block;}
-.hamburger-icon {display: none;}
 .grid6 {width: 16.66%;}
 .sectionHead {font-size: 45px;}
 .sectionText {font-size: 18px;}
