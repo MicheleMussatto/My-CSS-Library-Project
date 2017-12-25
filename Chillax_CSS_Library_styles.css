@@ -801,8 +801,12 @@ option {
   min-height: 200px;
   padding-bottom: 40px;
 }
-.flex9 {-webkit-flex: 1; flex: 1; margin: 1%; background: #c9a775;}
-
+.flex9 {
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 1%;
+  background: #c9a775;
+}
 .tableDiv {
   background: #c9a775;
   padding: 15px 0px 30px 0px;
@@ -844,6 +848,9 @@ tr:hover {
   margin: auto;
   padding-bottom: 40px;
 }
+/*-----------------------------------------
+FOOTER STYLES
+-----------------------------------------*/
 .footerDiv {
   padding: 2.5em 0;
   max-width: 100%;
@@ -896,99 +903,176 @@ tr:hover {
 .github2 {
   width: 75%;
 }
+/*--------------------------------------------
+FOOTER BREAKPOINTS
+--------------------------------------------*/
 @media (min-width:100px) {
-nav li {display: block;}
-.grid6 {width: 100%;}
-.sectionHead {font-size: 80px;}
-.sectionText {font-size: 24px;}
-body, button {font-size: 21px;}
-td, th {font-size: 17px;}
-.ttitle {font-size: 37px;}
-.logo, .libName {font-size: 44px;}
 .codeholder, .copyright, .githolder {width: 100%}
-.avatars, .avatars:hover {flex-direction: column;}
-#navbarpic {width: 100%;}
+.libName {font-size: 44px;}
 .codepen, .github {width: 0%;}
 .codepen2, .github2 {width: 75%;}
-/*.codeholder, .githolder {visibility: hidden;}*/
-/*.codeholder, .githolder {display: none;}*/
 .codeholder2, .githolder2 {display: visible;}
-.footerDiv {padding: 0.5em 0;}
+}
+@media (min-width:414px) {
+.codeholder, .copyright, .githolder {width: 100%}
+.libName {font-size: 44px;}
+.codepen, .github {width: 0%;}
+.codepen2, .github2 {width: 75%;}
+.codeholder2, .githolder2 {display: visible;}
+}
+@media (min-width:480px) {
+.codeholder, .copyright, .githolder {width: 100%}
+.libName {font-size: 41px;}
+.codepen, .github {width: 0%;}
+.codepen2, .github2 {width: 50%;}
+.codeholder2, .githolder2 {display: visible;}
+}
+@media (min-width:768px) {
+.codeholder, .githolder {width: 40%}
+.copyright {width: 20%}
+.libName {font-size: 38px;}
+.codepen, .github {width: 35%;}
+.codepen2, .github2 {width: 35%;}
+.codeholder2, .githolder2 {display: none;}
+}
+@media (min-width:1024px) {
+.codeholder, .githolder {width: 40%}
+.copyright {width: 20%}
+.libName {font-size: 35px;}
+.codepen, .github {width: 35%;}
+.codepen2, .github2 {width: 35%;}
+.codeholder2, .githolder2 {display: none;}
+}
+/*------------------------------------------
+NAVBAR BREAKPOINTS
+-------------------------------------------*/
+@media (min-width:100px) {
+nav li {display: block;}
+.logo {font-size: 44px;}
 }
 @media (min-width:414px) {
 nav li {display: block;}
-.grid6 {width: 50%;}
-.sectionHead {font-size: 80px;}
-.sectionText {font-size: 27px;}
-body, button {font-size: 24px;}
-td, th {font-size: 17px;}
-.ttitle {font-size: 37px;}
-.logo, .libName {font-size: 44px;}
-.codeholder, .copyright, .githolder {width: 100%}
-.avatars, .avatars:hover {flex-direction: column;}
-#navbarpic {width: 90%;}
-.codepen, .github {width: 0%;}
-.codepen2, .github2 {width: 75%;}
-/*.codeholder, .githolder {visibility: hidden;}*/
-.codeholder2, .githolder2 {display: visible;}
-.footerDiv {padding: 0.5em 0;}
+.logo {font-size: 44px;}
 }
 @media (min-width:480px) {
 nav li {display: block;}
-.grid6 {width: 33%;}
-.sectionHead {font-size: 70px;}
-.sectionText {font-size: 24px;}
-body, button {font-size: 21px;}
-/*td, th {font-size: 17px;}*/
-.ttitle {font-size: 34px;}
-.logo, .libName {font-size: 41px;}
-.codeholder, .copyright, .githolder {width: 100%}
-.avatars, .avatars:hover {flex-direction: column;}
-#navbarpic {width: 90%;}
-.codepen, .github {width: 0%;}
-.codepen2, .github2 {width: 50%;}
-/*.codeholder, .githolder {display: none;}*/
-
-.codeholder2, .githolder2 {display: visible;}
-.footerDiv {padding: 0.5em 0;}
+.logo {font-size: 41px;}
 }
 @media (min-width:768px) {
 nav li {display: inline-block;}
-.grid6 {width: 25%;}
-.sectionHead {font-size: 60px;}
-.sectionText {font-size: 21px;}
-body, button {font-size: 17px;}
-td, th {font-size: 17px;}
-.ttitle {font-size: 31px;}
-.logo, .libName {font-size: 38px;}
-.codeholder, .githolder {width: 40%}
-.copyright {width: 20%}
-.avatars, .avatars:hover {flex-direction: row;}
-#navbarpic {width: 60%;}
-.codepen, .github {width: 35%;}
-.codepen2, .github2 {width: 35%;}
-/*.codeholder, .githolder {visibility: visible;}*/
-/*.codeholder, .githolder {display: visible;}*/
-.codeholder2, .githolder2 {display: none;}
-.footerDiv {padding: 2.5em 0;}
+.logo {font-size: 38px;}
 }
 @media (min-width:1024px) {
 nav li {display: inline-block;}
+.logo {font-size: 35px;}
+}
+/*------------------------------------------
+GRID BREAKPOINTS
+------------------------------------------*/
+@media (min-width:100px) {
+.grid6 {width: 100%;}
+}
+@media (min-width:414px) {
+.grid6 {width: 50%;}
+}
+@media (min-width:480px) {
+.grid6 {width: 33%;}
+}
+@media (min-width:768px) {
+.grid6 {width: 25%;}
+}
+@media (min-width:1024px) {
 .grid6 {width: 16.66%;}
-.sectionHead {font-size: 45px;}
-.sectionText {font-size: 18px;}
-body, button {font-size: 14px;}
+}
+/*------------------------------------------
+AVATAR BREAKPOINTS
+------------------------------------------*/
+@media (min-width:100px) {
+.avatars, .avatars:hover {flex-direction: column;}
+}
+@media (min-width:414px) {
+.avatars, .avatars:hover {flex-direction: column;}
+}
+@media (min-width:480px) {
+.avatars, .avatars:hover {flex-direction: column;}
+}
+@media (min-width:768px) {
+.avatars, .avatars:hover {flex-direction: row;}
+}
+@media (min-width:1024px) {
+.avatars, .avatars:hover {flex-direction: row;}
+}
+/*------------------------------------------
+TABLE BREAKPOINTS
+------------------------------------------*/
+@media (min-width:100px) {
+td, th {font-size: 17px;}
+.ttitle {font-size: 37px;}
+}
+@media (min-width:414px) {
+td, th {font-size: 17px;}
+.ttitle {font-size: 37px;}
+}
+@media (min-width:480px) {
+td, th {font-size: 17px;}
+.ttitle {font-size: 34px;}
+}
+@media (min-width:768px) {
+td, th {font-size: 17px;}
+.ttitle {font-size: 31px;}
+}
+@media (min-width:1024px) {
 td, th {font-size: 14px;}
 .ttitle {font-size: 28px;}
-.logo, .libName {font-size: 35px;}
-.codeholder, .githolder {width: 40%}
-.copyright {width: 20%}
-.avatars, .avatars:hover {flex-direction: row;}
+}
+/*------------------------------------------
+BUTTON BREAKPOINTS
+------------------------------------------*/
+@media (min-width:100px) {
+button {font-size: 21px;}
+}
+@media (min-width:414px) {
+button {font-size: 24px;}
+}
+@media (min-width:480px) {
+button {font-size: 21px;}
+}
+@media (min-width:768px) {
+button {font-size: 17px;}
+}
+@media (min-width:1024px) {
+button {font-size: 14px;}
+}
+/*------------------------------------------
+OTHER BREAKPOINTS
+------------------------------------------*/
+@media (min-width:100px) {
+.sectionHead {font-size: 80px;}
+.sectionText {font-size: 24px;}
+body {font-size: 21px;}
+#navbarpic {width: 100%;}
+}
+@media (min-width:414px) {
+.sectionHead {font-size: 80px;}
+.sectionText {font-size: 27px;}
+body {font-size: 24px;}
+#navbarpic {width: 90%;}
+}
+@media (min-width:480px) {
+.sectionHead {font-size: 70px;}
+.sectionText {font-size: 24px;}
+body {font-size: 21px;}
+#navbarpic {width: 90%;}
+}
+@media (min-width:768px) {
+.sectionHead {font-size: 60px;}
+.sectionText {font-size: 21px;}
+body {font-size: 17px;}
+#navbarpic {width: 60%;}
+}
+@media (min-width:1024px) {
+.sectionHead {font-size: 45px;}
+.sectionText {font-size: 18px;}
+body {font-size: 14px;}
 #navbarpic {width: 50%;}
-.codepen, .github {width: 35%;}
-.codepen2, .github2 {width: 35%;}
-/*.codeholder, .githolder {visibility: visible;}*/
-/*.codeholder, .githolder {display: visible;}*/
-.codeholder2, .githolder2 {display: none;}
-.footerDiv {padding: 2.5em 0;}
 }
