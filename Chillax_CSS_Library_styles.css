@@ -527,6 +527,9 @@ blockquote {
   position: fixed;
   z-index: 1;
 }
+.navItem {
+  font-size: 14px;
+}
 .logo {
   float: left;
   padding: 10px 0px 0px 20px;
@@ -894,6 +897,7 @@ tr:hover {
   width: 75%;
 }
 @media (min-width:100px) {
+nav li {display: block;}
 .grid6 {width: 100%;}
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 24px;}
@@ -904,13 +908,15 @@ td, th {font-size: 17px;}
 .codeholder, .copyright, .githolder {width: 100%}
 .avatars, .avatars:hover {flex-direction: column;}
 #navbarpic {width: 100%;}
-.codepen, .github {width: 25%;}
+.codepen, .github {width: 0%;}
 .codepen2, .github2 {width: 75%;}
-.codeholder, .githolder {visibility: hidden;}
+/*.codeholder, .githolder {visibility: hidden;}*/
+/*.codeholder, .githolder {display: none;}*/
 .codeholder2, .githolder2 {display: visible;}
 .footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:414px) {
+nav li {display: block;}
 .grid6 {width: 50%;}
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 27px;}
@@ -921,30 +927,33 @@ td, th {font-size: 17px;}
 .codeholder, .copyright, .githolder {width: 100%}
 .avatars, .avatars:hover {flex-direction: column;}
 #navbarpic {width: 90%;}
-.codepen, .github {width: 15%;}
+.codepen, .github {width: 0%;}
 .codepen2, .github2 {width: 75%;}
-.codeholder, .githolder {visibility: hidden;}
+/*.codeholder, .githolder {visibility: hidden;}*/
 .codeholder2, .githolder2 {display: visible;}
 .footerDiv {padding: 0.5em 0;}
 }
 @media (min-width:480px) {
+nav li {display: block;}
 .grid6 {width: 33%;}
 .sectionHead {font-size: 70px;}
 .sectionText {font-size: 24px;}
 body, button {font-size: 21px;}
-td, th {font-size: 17px;}
+/*td, th {font-size: 17px;}*/
 .ttitle {font-size: 34px;}
 .logo, .libName {font-size: 41px;}
 .codeholder, .copyright, .githolder {width: 100%}
 .avatars, .avatars:hover {flex-direction: column;}
 #navbarpic {width: 90%;}
-.codepen, .github {width: 5%;}
+.codepen, .github {width: 0%;}
 .codepen2, .github2 {width: 50%;}
-.codeholder, .githolder {display: none;}
+/*.codeholder, .githolder {display: none;}*/
+
 .codeholder2, .githolder2 {display: visible;}
 .footerDiv {padding: 0.5em 0;}
 }
-@media (min-width:786px) {
+@media (min-width:768px) {
+nav li {display: inline-block;}
 .grid6 {width: 25%;}
 .sectionHead {font-size: 60px;}
 .sectionText {font-size: 21px;}
@@ -958,11 +967,13 @@ td, th {font-size: 17px;}
 #navbarpic {width: 60%;}
 .codepen, .github {width: 35%;}
 .codepen2, .github2 {width: 35%;}
-.codeholder, .githolder {visibility: visible;}
+/*.codeholder, .githolder {visibility: visible;}*/
+/*.codeholder, .githolder {display: visible;}*/
 .codeholder2, .githolder2 {display: none;}
 .footerDiv {padding: 2.5em 0;}
 }
 @media (min-width:1024px) {
+nav li {display: inline-block;}
 .grid6 {width: 16.66%;}
 .sectionHead {font-size: 45px;}
 .sectionText {font-size: 18px;}
@@ -976,7 +987,8 @@ td, th {font-size: 14px;}
 #navbarpic {width: 50%;}
 .codepen, .github {width: 35%;}
 .codepen2, .github2 {width: 35%;}
-.codeholder, .githolder {visibility: visible;}
+/*.codeholder, .githolder {visibility: visible;}*/
+/*.codeholder, .githolder {display: visible;}*/
 .codeholder2, .githolder2 {display: none;}
 .footerDiv {padding: 2.5em 0;}
 }
