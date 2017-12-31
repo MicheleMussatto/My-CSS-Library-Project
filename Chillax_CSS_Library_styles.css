@@ -448,15 +448,18 @@ template {
   display: none;
 }
 
-/*"CHILLAX" CSS Library stylesheet by Michele Mussatto ============================*/
-
+/*====================================================*/
+/*"CHILLAX" CSS Library stylesheet by Michele Mussatto ======================================================*/
+/*-----------------------------------------
+TEXT STYLES
+-----------------------------------------*/
 body, html {
   height: 100%;
   margin: 0;
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
   color: #5D5046;
-  }
+}
 h1, h2, h3, h4, h5, h6, p {
 /*These settings are borrowed from the reset.css stylesheet,
 http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
@@ -494,6 +497,9 @@ h6 {
 p, li {
   line-height: 1.5;
 }
+/*-----------------------------------------
+BLOCK QUOTE STYLES
+-----------------------------------------*/
 blockquote {
   font-size: 22px;
   line-height: 1.2;
@@ -513,22 +519,17 @@ blockquote {
   padding-right: 10px;
   margin-top: 15px;
 }
+/*-----------------------------------------
+NAVBAR STYLES
+-----------------------------------------*/
 .navbar {
   width: 100%;
   margin: 0 auto;
   position: fixed;
   background-color: rgba(93, 80, 70, 0.2);
-  /*background: #5D5046;
-  opacity: 0.2;*/
   z-index: 1;
   max-height: 58px;
 }
-/*.navbarClear {
-  width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  z-index: 1;
-}*/
 .navItem {
   font-size: 14px;
 }
@@ -543,8 +544,6 @@ blockquote {
 nav {
   float: right;
   padding-top: 12px;
-  /*background-color: rgba(249,249,249,0.0);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);*/
 }
 nav ul {
   list-style: none;
@@ -613,6 +612,9 @@ a:hover {
   height: 20px;
   opacity: .2;
 }
+/*-----------------------------------------
+PARALLAXING SECTION STYLES
+-----------------------------------------*/
 .imageDivTitle {
   color: white;
   text-shadow: 0px 0px 20px black;
@@ -668,6 +670,9 @@ a:hover {
 .textDiv {
   margin: 40px;
 }
+/*-----------------------------------------
+AVATAR STYLES
+-----------------------------------------*/
 .avatar {
   border-radius: 50%;
   height: 140px;
@@ -709,6 +714,9 @@ a:hover {
   flex: 3;
   -webkit-flex: 1;
 }
+/*-----------------------------------------
+SPECIAL TEXT STYLES
+-----------------------------------------*/
 .sectionHead {
   text-align: center;
   padding-bottom: 40px;
@@ -720,6 +728,9 @@ a:hover {
   margin: 0% 5%;
   padding-bottom: 40px;
 }
+/*-----------------------------------------
+BUTTON STYLES
+-----------------------------------------*/
 .button {
   padding-bottom: 40px;
   text-align: center;
@@ -742,6 +753,9 @@ button {
 .btnBrown {
   background: #c9a775;
 }
+/*-----------------------------------------
+FORM STYLES
+-----------------------------------------*/
 .formDiv {
   background: #c9a775;
   padding: 40px;
@@ -798,6 +812,9 @@ option {
 #frmBtn {
   min-width: 120px;
 }
+/*-----------------------------------------
+GRID STYLES
+-----------------------------------------*/
 .grid6 {
   border: white solid 10px;
   float: left;
@@ -820,6 +837,9 @@ option {
   margin: 1%;
   background: #c9a775;
 }
+/*-----------------------------------------
+TABLE STYLES
+-----------------------------------------*/
 .tableDiv {
   background: #c9a775;
   padding: 15px 0px 30px 0px;
@@ -855,6 +875,9 @@ tr:hover {
   padding-bottom: 10px;
   padding-left: 15px;
 }
+/*-----------------------------------------
+OTHER STYLES
+-----------------------------------------*/
 #navbarpic {
   display: block;
   width: 50%;
@@ -916,7 +939,6 @@ FOOTER STYLES
 .github2 {
   width: 75%;
 }
-
 /*--------------------------------------------
 FOOTER BREAKPOINTS
 --------------------------------------------*/
@@ -964,19 +986,19 @@ NAVBAR BREAKPOINTS
 nav li {display: block; opacity: 0;}
 .logo {font-size: 44px;}
 #hamburger-icon {height: 20px;}
-nav {padding-top: 20px;}
+nav {padding-top: 40px;}
 }
 @media (min-width:414px) {
 nav li {display: block; opacity: 0;}
 .logo {font-size: 44px;}
 #hamburger-icon {height: 20px;}
-nav {padding-top: 20px;}
+nav {padding-top: 40px;}
 }
 @media (min-width:480px) {
 nav li {display: block; opacity: 0;}
 .logo {font-size: 41px;}
 #hamburger-icon {height: 20px;}
-nav {padding-top: 20px;}
+nav {padding-top: 40px;}
 }
 @media (min-width:768px) {
 nav li {display: inline-block; opacity: 1;}
