@@ -517,16 +517,18 @@ blockquote {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  background: #5D5046;
-  opacity: 0.2;
+  background-color: rgba(93, 80, 70, 0.2);
+  /*background: #5D5046;
+  opacity: 0.2;*/
   z-index: 1;
+  max-height: 58px;
 }
-.navbarClear {
+/*.navbarClear {
   width: 100%;
   margin: 0 auto;
   position: fixed;
   z-index: 1;
-}
+}*/
 .navItem {
   font-size: 14px;
 }
@@ -540,6 +542,9 @@ blockquote {
 }
 nav {
   float: right;
+  padding-top: 12px;
+  /*background-color: rgba(249,249,249,0.0);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);*/
 }
 nav ul {
   list-style: none;
@@ -547,6 +552,7 @@ nav ul {
 }
 nav li {
   display: inline-block;
+  opacity: 1;
   margin-left: 70px;
   padding-top: 1px;
 }
@@ -591,14 +597,21 @@ a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.hamburger-icon {
-  height: 20px;
-  /*display: none;*/
+.hamburgerDiv {
+  background: none;
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
 }
-.hamburger-icon:hover {
+.navbar:hover nav li {
+  opacity: 1;
+}
+#hamburger-icon {
+  height: 20px;
+}
+#hamburger-icon:hover {
   height: 20px;
   opacity: .2;
-  display: none;
 }
 .imageDivTitle {
   color: white;
@@ -903,6 +916,7 @@ FOOTER STYLES
 .github2 {
   width: 75%;
 }
+
 /*--------------------------------------------
 FOOTER BREAKPOINTS
 --------------------------------------------*/
@@ -947,24 +961,34 @@ FOOTER BREAKPOINTS
 NAVBAR BREAKPOINTS
 -------------------------------------------*/
 @media (min-width:100px) {
-nav li {display: block;}
+nav li {display: block; opacity: 0;}
 .logo {font-size: 44px;}
+#hamburger-icon {height: 20px;}
+nav {padding-top: 20px;}
 }
 @media (min-width:414px) {
-nav li {display: block;}
+nav li {display: block; opacity: 0;}
 .logo {font-size: 44px;}
+#hamburger-icon {height: 20px;}
+nav {padding-top: 20px;}
 }
 @media (min-width:480px) {
-nav li {display: block;}
+nav li {display: block; opacity: 0;}
 .logo {font-size: 41px;}
+#hamburger-icon {height: 20px;}
+nav {padding-top: 20px;}
 }
 @media (min-width:768px) {
-nav li {display: inline-block;}
+nav li {display: inline-block; opacity: 1;}
 .logo {font-size: 38px;}
+#hamburger-icon {height: 0px;}
+nav {padding-top: 0px;}
 }
 @media (min-width:1024px) {
-nav li {display: inline-block;}
+nav li {display: inline-block; opacity: 1;}
 .logo {font-size: 35px;}
+#hamburger-icon {height: 0px;}
+nav {padding-top: 0px;}
 }
 /*------------------------------------------
 GRID BREAKPOINTS
@@ -1044,35 +1068,48 @@ button {font-size: 17px;}
 button {font-size: 14px;}
 }
 /*------------------------------------------
+BODY TEXT BREAKPOINTS
+------------------------------------------*/
+@media (min-width:100px) {
+body {font-size: 21px;}
+}
+@media (min-width:414px) {
+body {font-size: 24px;}
+}
+@media (min-width:480px) {
+body {font-size: 21px;}
+}
+@media (min-width:768px) {
+body {font-size: 17px;}
+}
+@media (min-width:1024px) {
+body {font-size: 14px;}
+}
+/*------------------------------------------
 OTHER BREAKPOINTS
 ------------------------------------------*/
 @media (min-width:100px) {
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 24px;}
-body {font-size: 21px;}
 #navbarpic {width: 100%;}
 }
 @media (min-width:414px) {
 .sectionHead {font-size: 80px;}
 .sectionText {font-size: 27px;}
-body {font-size: 24px;}
 #navbarpic {width: 90%;}
 }
 @media (min-width:480px) {
 .sectionHead {font-size: 70px;}
 .sectionText {font-size: 24px;}
-body {font-size: 21px;}
 #navbarpic {width: 90%;}
 }
 @media (min-width:768px) {
 .sectionHead {font-size: 60px;}
 .sectionText {font-size: 21px;}
-body {font-size: 17px;}
 #navbarpic {width: 60%;}
 }
 @media (min-width:1024px) {
 .sectionHead {font-size: 45px;}
 .sectionText {font-size: 18px;}
-body {font-size: 14px;}
 #navbarpic {width: 50%;}
 }
